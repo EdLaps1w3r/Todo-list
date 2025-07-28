@@ -5,13 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo List</title>
 </head>
+<style>
+    #newListForm {
+        display: none;
+    }
+    body {
+        display: inline;
+    }
+</style>
+
 <body>
-    <div id="ListContainer"></div>
-    <div id="NewListButton">
-        <button>
-            <div>Create New List</div>
-            <div>+</div>
-        </button>
+    <h1>My Todo Lists</h1>
+    <form id="newListForm">
+        <h1>Create New List</h1>
+    
+        <label for="title">Title</label>
+        <input type="text" placeholder="Enter Title of new list" name="title" id="title">
+    
+        <h2>Tasks</h1>
+        <label for="task1">New Task</label>
+        <input type="text" placeholder="Enter name of new list" name="task1" id="task1">
+        <div id="taskContainer"></div>
+        <button id="newFormTask">Add another task</button>
+    
+        <button type="submit" id="submit">Create New List</button>
+        <button type="button" id="close">Close</button>
+    
+    </form>
+    <div id="body">
+        <div id="listContainer"></div>
+        <div id="NewListButton">
+            <button id="createListButton">
+                <div>Create New List</div>
+                <div>+</div>
+            </button>
+    </div>
+    
     </div>
 </body>
 </html>

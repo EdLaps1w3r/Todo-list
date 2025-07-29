@@ -12,6 +12,9 @@
     body {
         display: inline;
     }
+    .task:hover {
+        text-decoration: line-through;
+    }
 </style>
 
 <body>
@@ -24,13 +27,13 @@
     
         <h2>Tasks</h1>
         <label for="task1">New Task</label>
-        <input type="text" placeholder="Enter name of new list" name="task1" id="task1">
+        <input type="text" placeholder="Enter new task" name="task1" id="task1">
         <div id="taskContainer"></div>
-        <button id="newFormTask">Add another task</button>
+        <button id="newFormTask" type="button">Add another task</button>
     
-        <button type="submit" id="submit">Create New List</button>
+        <button type="button" id="submit">Create New List</button>
         <button type="button" id="close">Close</button>
-    
+        
     </form>
     <div id="body">
         <div id="listContainer"></div>
